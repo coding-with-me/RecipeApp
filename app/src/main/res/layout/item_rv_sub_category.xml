@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    tools:context=".SplashActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_260sdp"
+        android:layout_margin="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_5sdp">
+
+        <ImageView
+            android:id="@+id/img_dish"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_splash" />
+
+
+
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/tv_dish_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dish Name"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/black"
+            android:maxLines="2"
+            android:fontFamily="@font/gilroy_light"
+            android:paddingStart="@dimen/_10sdp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

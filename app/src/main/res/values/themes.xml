@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.RecipeApp" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/yellow</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/brown</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="ThemeOverlay.Search" parent="Theme.RecipeApp">
+        <!-- Primary brand color. -->
+        <item name="android:editTextColor">@color/black</item>
+        <item name="android:textColorHint">@color/hintTextColor</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

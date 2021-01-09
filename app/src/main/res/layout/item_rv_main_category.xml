@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".SplashActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        app:cardBackgroundColor="@color/yellow"
+        android:layout_margin="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_5sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:id="@+id/img_dish"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="-20dp"
+                android:layout_marginRight="-20dp"
+                android:src="@drawable/cat_img"/>
+
+            <TextView
+                android:id="@+id/tv_dish_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dish Name"
+                android:textSize="@dimen/_10ssp"
+                android:textColor="@color/black"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:maxEms="10"
+                android:maxLines="2"
+                android:fontFamily="@font/gilroy_bold"
+                android:padding="@dimen/_10sdp"/>
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>
