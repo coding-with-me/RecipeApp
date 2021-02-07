@@ -64,6 +64,7 @@
                 android:fontFamily="@font/gilroy_bold"
                 android:paddingStart="@dimen/_10sdp"
                 android:text="Category name"
+                android:id="@+id/tvCategory"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_15ssp" />
 
