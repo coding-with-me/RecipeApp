@@ -1,5 +1,6 @@
 package com.codingwithme.recipeapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -28,6 +29,7 @@ class HomeActivity : BaseActivity() {
         getDataFromDb()
 
         mainCategoryAdapter.setClickListener(onCLicked)
+        subCategoryAdapter.setClickListener(onCLickedSubItem)
 
 
 
@@ -37,6 +39,14 @@ class HomeActivity : BaseActivity() {
     private val onCLicked  = object : MainCategoryAdapter.OnItemClickListener{
         override fun onClicked(categoryName: String) {
             getMealDataFromDb(categoryName)
+        }
+    }
+
+    private val onCLickedSubItem  = object : SubCategoryAdapter.OnItemClickListener{
+        override fun onClicked(id: String) {
+            var intent = Intent(this@HomeActivity,DetailActivity::class.java)
+            intent.putExtra("id",id)
+            startActivity(intent)
         }
     }
 

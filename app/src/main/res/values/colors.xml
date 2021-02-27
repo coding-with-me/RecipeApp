@@ -5,6 +5,9 @@
     <color name="black">#FF000000</color>
     <color name="transparent">#00000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="pink">#F6DEDE</color>
+    <color name="youtube">#C64141</color>
     <color name="gray">#f5f5f5</color>
+    <color name="darkGray">#3A3939</color>
     <color name="hintTextColor">#787878</color>
 </resources>
