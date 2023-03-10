@@ -22,6 +22,8 @@ import retrofit2.Callback
 import retrofit2.Response
 import java.util.jar.Manifest
 
+// testing from NA
+
 class SplashActivity : BaseActivity(), EasyPermissions.RationaleCallbacks,
     EasyPermissions.PermissionCallbacks {
     private var READ_STORAGE_PERM = 123
